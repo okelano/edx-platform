@@ -156,7 +156,7 @@ CMS.Views.TextbookEdit = Backbone.View.extend({
     },
     setAndClose: function(e) {
         if(e && e.preventDefault) { e.preventDefault(); }
-        this.setAndClose();
+        this.setValues();
         msg = new CMS.Models.SystemFeedback({
             intent: "saving",
             title: gettext("Saving&hellip;")
